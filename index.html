@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do app</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="h-screen flex items-center justify-center">
+        <div class="w-[600px] bg-slate-200 rounded-xl border-2 border-slate-400">
+            <h1 class="text-center text-4xl font-extrabold my-4">TO-DO LIST</h1>
+            <hr>
+            <div class="flex justify-center items-center gap-4 my-4">
+                <p>Add New Task</p>
+                <input id="task-input" class="border-2 border-green-400 rounded-xl p-1 px-4 outline-1 outline-green-700"
+                    type="text" placeholder="Enter a new task here...">
+                <button id="submit-btn" class="bg-green-600 text-white p-2 px-4 rounded-xl">Submit</button>
+            </div>
+            <div class="flex justify-center items-center gap-x-8 my-4">
+                <div class="w-2/5 bg-white border-2 border-red-400 rounded-md px-4">
+                    <h2 class="text-center font-extrabold my-4">INCOMPLETE TASKS</h2>
+                    <hr>
+                    <ul id="incomplete-tasks">
+                        <li class="my-2">
+                            <input type="checkbox" name="" id="checkbox"> <label for="checkbox">Sample Task</label>
+                        </li>
+                        <li class="my-2">
+                            <input type="checkbox" name="" id=""> <label for="">Sample Task</label>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="w-2/5 bg-white border-2 border-green-400 rounded-md px-4">
+                    <h2 class="text-center font-extrabold my-4">COMPLETE TASKS</h2>
+                    <hr>
+                    <ul id="complete-tasks">
+                        <li class="my-2"> <label for="">Sample Task</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
